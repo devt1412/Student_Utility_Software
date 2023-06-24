@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GPA"
+    android:background="@color/white">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/gpaheading"
+        android:background="@color/blue"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPA Calculator"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <ImageButton
+            android:id="@+id/backbt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select grade:"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_below="@id/gpaheading"
+        android:id="@+id/gpah"
+        android:layout_marginVertical="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gpah"
+
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginHorizontal="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select credits:"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:layout_below="@id/grade"
+        android:id="@+id/credith"
+        android:layout_marginVertical="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credith"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addgpa"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/credit"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/green"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ADD"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+    <ImageButton
+        android:id="@+id/refreshbt"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_refresh_24"
+        android:background="@color/white"
+        android:layout_toRightOf="@id/addgpa"
+        android:layout_below="@id/credit"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="GPA: 0.00"
+        android:maxLength="9"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:id="@+id/gpa"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subjects:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/subs"
+        android:layout_below="@+id/gpa"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>

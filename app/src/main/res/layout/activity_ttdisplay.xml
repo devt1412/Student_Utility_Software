@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TTDisplay"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tthead"
+        android:background="@color/blue"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time-Table"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <ImageButton
+            android:id="@+id/backbt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:scrollbars="horizontal"
+    >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+        <View
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+        <TableRow
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="\nM\nO\nN\n"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/a11"
+                android:text="A1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/b11"
+                android:text="B1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/c11"
+                android:text="C1"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:width="100dp"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+
+                android:text="B\nR\nE\nA\nK"
+                android:layout_marginHorizontal="5dp"
+
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/a21"
+                android:text="A2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/b21"
+                android:text="B2"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:width="100dp"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/c21"
+                android:text="C2"
+                android:scrollHorizontally="true"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+        </TableRow>
+        <View
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+        <TableRow
+            >
+            <TextView
+                android:text="\nT\nU\nE\n"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="5dp"
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/b12"
+                android:text="B1"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:width="100dp"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/c12"
+                android:text="C1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/a12"
+                android:text="A1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+
+                android:text="B\nR\nE\nA\nK"
+                android:layout_marginHorizontal="5dp"
+
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/b22"
+                android:text="B2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/c22"
+                android:text="C2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/a22"
+                android:text="A2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+        </TableRow>
+        <View
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+        <TableRow
+            >
+            <TextView
+                android:text="\nW\nE\nD\n"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="5dp"
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/c13"
+                android:text="C1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/a13"
+                android:text="A1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/b13"
+                android:text="B1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+
+                android:text="B\nR\nE\nA\nK"
+                android:layout_marginHorizontal="5dp"
+
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/c23"
+                android:text="C2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/a23"
+                android:text="A2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/b23"
+                android:text="B2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+        </TableRow>
+        <View
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+
+        <TableRow
+            >
+            <TextView
+                android:text="\nT\nH\nU\n"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="5dp"
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/a14"
+                android:text="A1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/b14"
+                android:text="B1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/c14"
+                android:text="C1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+
+                android:text="B\nR\nE\nA\nK"
+                android:layout_marginHorizontal="5dp"
+
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/a24"
+                android:text="A2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/b24"
+                android:text="B2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/c24"
+                android:text="C2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+        </TableRow>
+        <View
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+        <TableRow
+            >
+            <TextView
+                android:text="\nF\nR\nI\n"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="5dp"
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/b15"
+                android:text="B1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/c15"
+                android:text="C1"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/a15"
+                android:text="A1"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:width="100dp"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+
+                android:text="B\nR\nE\nA\nK"
+                android:layout_marginHorizontal="5dp"
+
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/b25"
+                android:text="B2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/c25"
+                android:text="C2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+            <TextView
+                android:id="@+id/a25"
+                android:text="A2"
+                android:layout_marginHorizontal="10dp"
+                android:width="100dp"
+                android:gravity="center"
+                android:breakStrategy="balanced"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FF909090" />
+        </TableRow>
+        <View
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+
+    </TableLayout>
+</HorizontalScrollView>
+</RelativeLayout>
